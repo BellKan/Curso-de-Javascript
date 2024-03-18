@@ -9,8 +9,10 @@ function clicar(){
     area.style.background = 'green'
 }
 function entrar(){
+    area.innerText = 'Entrou'
     area.style.background = 'darkblue'
 }
 function sair(){
+    area.innerText = 'Sair'
     area.style.background = 'red'
 }
