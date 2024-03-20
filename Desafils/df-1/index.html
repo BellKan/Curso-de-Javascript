@@ -8,10 +8,27 @@
 </head>
 <body>
     <h1>Seu País de Origem</h1>
-    Digite o nome do seu país de Origem: <input type="text" name="txtp" id="txtp">
+    <p>Digite o nome do seu país de Origem: </p> <input type="text" name="txtp" id="txtp">
     <input type="button" value="Verificar" onclick="clicar()">
     <div id="res"></div>
 
-    <script src="index.js"></script>
+    <script>
+        function clicar() {
+        var pais = window.document.querySelector('input#txtp')
+        var res = window.document.querySelector('div#res')
+        var pa = String(pais.value)
+
+        res.innerHTML = `<p>Sua nacionalidade é do ${pa}</p>`
+        
+        if (pa == 'Brasil'){
+            res.innerHTML += '<p>Então você é Brasileiro!</p>'
+            
+        } else if (pa != 'Brasil'){
+        
+        res.innerHTML += '<p>você é estrangeiro</p>'
+            
+        }
+    }
+</script>
 </body>
 </html>
