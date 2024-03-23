@@ -9,22 +9,30 @@
 </head>
 <body>
     <header>
-        <h1>Calculando Sua Idade</h1>
+        <h1>Verificador de Idade</h1>
     </header>
     <section>
-        <input type="number" name="" id="">
-        <input type="checkbox" name="" id="">
-        <input type="checkbox" name="" id="">
-        <input type="button" value="">
-        <div id="msg">
-            Preencha os requisitos para poder ver o resultado!
+        <div>
+            <p>
+                Ano de Nascimento:
+                <input type="number" name="txtano" id="txtano" min="0">
+            </p>
+            <p>Sexo:
+                <input type="radio" name="radsex" id="mas" checked>
+                <label for="mas">Masculino</label>
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()">
+            </p>
         </div>
-        <div id="foto">
-            <img id="imagem" src="" alt="">
+        <div id="res">
+            Preencha os dados para ver o resutado!
         </div>
     </section>
     <footer>
-        <p></p>
+        <p> &copy; Curso Em Video</p>
     </footer>
     <script src="script.js"></script>
 </body>

@@ -19,10 +19,13 @@ section{
     background-color: white;
     border-radius: 20px;
 
-    width: 500px;
-    height: 300px;
+    width: 600px;
+    
 }
 #msg{
     padding: 20px;
     font-size: 14pt;
+}
+footer{
+    color: white;
 }
